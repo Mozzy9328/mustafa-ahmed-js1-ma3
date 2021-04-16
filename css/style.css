@@ -1,0 +1,36 @@
+.box {
+	background-color: #88b5bd;
+	margin-top: 5%;
+}
+
+.the-list {
+	display: grid;
+	grid-template-areas: "block block block";
+	justify-content: space-around;
+}
+
+.loading {
+	border: 10px solid #e62253;
+	border-top: 10px solid #ffff;
+	border-radius: 100%;
+	padding: 25% 55% 25% 5%;
+	animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		border-top: 10px solid #ffff;
+	}
+	25% {
+		border-right: 10px solid #ffff;
+	}
+	50% {
+		border-bottom: 10px solid #ffff;
+	}
+	75% {
+		border-left: 10px solid #ffff;
+	}
+	100% {
+		border-top: 10px solid #e62253;
+	}
+}
